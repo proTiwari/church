@@ -15,7 +15,7 @@ import '../../utils/Common.dart';
 import '../../utils/ResponsiveWidget.dart';
 import '../../utils/Extensions/app_textfield.dart';
 import '../../utils/Extensions/common.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 import '../../utils/Extensions/decorations.dart';
 import '../../utils/Extensions/shared_pref.dart';
 import '../../utils/Extensions/text_styles.dart';
@@ -204,7 +204,9 @@ class SignInComponentState extends State<SignInComponent> {
                       style: boldTextStyle(color: primaryColor, size: 14),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () {
-                           Navigator.of(context).pushNamed(TermAndConditionScreen.route);
+                           final Uri url = Uri.parse('https://emptytrunks.com/terms/');
+                            launchUrl(url);
+                          //  Navigator.of(context).pushNamed(TermAndConditionScreen.route);
                         },
                     ),
                     TextSpan(text: ' & ', style: primaryTextStyle(size: 14)),
@@ -213,7 +215,9 @@ class SignInComponentState extends State<SignInComponent> {
                       style: boldTextStyle(color: primaryColor, size: 14),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () {
-                          Navigator.of(context).pushNamed(PrivacyPolicyScreen.route);
+                          final Uri url = Uri.parse('https://emptytrunks.com/privacy/');
+                          launchUrl(url);
+                          // Navigator.of(context).pushNamed(PrivacyPolicyScreen.route);
                         },
                     ),
                   ],

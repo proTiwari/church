@@ -1053,9 +1053,9 @@
     },
     {
       "name": "url_launcher",
-      "rootUri": "file:///C:/Users/stabc/AppData/Local/Pub/Cache/hosted/pub.dev/url_launcher-6.1.11",
+      "rootUri": "file:///C:/Users/stabc/AppData/Local/Pub/Cache/hosted/pub.dev/url_launcher-6.1.12",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.0"
     },
     {
       "name": "url_launcher_android",
@@ -1166,7 +1166,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2023-08-26T05:22:29.458938Z",
+  "generated": "2023-08-26T10:42:37.925635Z",
   "generator": "pub",
   "generatorVersion": "3.1.0-312.0.dev"
 }
