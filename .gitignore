@@ -1,0 +1,12 @@
+# Ignore compiled binaries
+*.exe
+*.o
+*.class
+*.dart_tool
+
+# Ignore sensitive configuration files
+config.ini
+secret.txt
+
+# Ignore a directory
+build/

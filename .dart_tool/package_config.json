@@ -189,7 +189,7 @@
     },
     {
       "name": "collection",
-      "rootUri": "file:///C:/Users/stabc/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.18.0",
+      "rootUri": "file:///C:/Users/stabc/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.17.2",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -1166,7 +1166,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2023-08-26T02:55:05.559757Z",
+  "generated": "2023-08-26T05:22:29.458938Z",
   "generator": "pub",
-  "generatorVersion": "3.2.0-97.0.dev"
+  "generatorVersion": "3.1.0-312.0.dev"
 }
