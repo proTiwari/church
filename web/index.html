@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-messaging.js"></script>
+    <script src="<https://maps.googleapis.com/maps/api/js?key=AIzaSyDePKoLpdNJPqg1ilCWccUPl7AdxI3sY_w>"></script>
+
+    <base href="/">
+
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="EmptyTrunks">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="local_delivery_admin">
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Mighty Delivery</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }      .indicator{
+        width: 10vw;
+      }
+</style>
+</head>
+<body style="overflow: hidden">
+<div id="loading_indicator" class="container">
+    <img class="indicator" src="loading.gif"/>
+</div>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyDePKoLpdNJPqg1ilCWccUPl7AdxI3sY_w",
+  authDomain: "emptytrunks-949b5.firebaseapp.com",
+  projectId: "emptytrunks-949b5",
+  storageBucket: "emptytrunks-949b5.appspot.com",
+  messagingSenderId: "228651851514",
+  appId: "1:228651851514:web:eac90d44e674c3fa2c7343"
+ };
+   firebase.initializeApp(firebaseConfig);
+   const messaging = firebase.messaging();
+</script>
+<script src="main.dart.js" type="application/javascript"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+
+        navigator.serviceWorker.register('/firebase-messaging-sw.js', { scope: './'}).then(function(registration) {
+          messaging.useServiceWorker(registration);
+          console.log('Service firebase worker registration succeeded:', registration);
+        }, function(error) {
+          console.log('Service firebase worker registration failed:', error);
+        });
+      });
+    }
+
+</script>
+window.onload = function () {
+setTimeout(function () {
+var loadingIndicator = document.getElementById("loading_indicator");
+if (loadingIndicator) {
+loadingIndicator.remove();
+}
+}, 10000);
+};
+</body>
+</html>

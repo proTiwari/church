@@ -1,0 +1,25 @@
+2023/08/26-09:37:32.443 1b5c Reusing MANIFEST C:\Users\stabc\AppData\Local\Temp\flutter_tools.4e1b37c8\flutter_tools_chrome_device.437871a6\Default\IndexedDB\http_localhost_55954.indexeddb.leveldb/MANIFEST-000001
+2023/08/26-09:37:32.443 1b5c Recovering log #164
+2023/08/26-09:37:32.444 1b5c Reusing old log C:\Users\stabc\AppData\Local\Temp\flutter_tools.4e1b37c8\flutter_tools_chrome_device.437871a6\Default\IndexedDB\http_localhost_55954.indexeddb.leveldb/000164.log 
+2023/08/26-09:37:32.444 1b5c Delete type=2 #163
+2023/08/26-09:37:32.448 789c Level-0 table #169: started
+2023/08/26-09:37:32.461 789c Level-0 table #169: 752 bytes OK
+2023/08/26-09:37:32.462 789c Delete type=0 #164
+2023/08/26-09:37:32.462 1b5c Manual compaction at level-0 from '\x00;\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00<\x00\x00\x00' @ 0 : 0; will stop at '\x00;\x00\x00\x05' @ 1461 : 1
+2023/08/26-09:37:32.462 1b5c Compacting 1@0 + 1@1 files
+2023/08/26-09:37:32.475 1b5c Generated table #170@0: 149 keys, 4042 bytes
+2023/08/26-09:37:32.475 1b5c Compacted 1@0 + 1@1 files => 4042 bytes
+2023/08/26-09:37:32.475 1b5c compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/08/26-09:37:32.476 1b5c Delete type=2 #169
+2023/08/26-09:37:32.477 1b5c Manual compaction at level-0 from '\x00;\x00\x00\x05' @ 1461 : 1 .. '\x00<\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/08/26-09:37:35.583 789c Level-0 table #172: started
+2023/08/26-09:37:35.598 789c Level-0 table #172: 3145 bytes OK
+2023/08/26-09:37:35.599 789c Delete type=2 #166
+2023/08/26-09:37:35.599 789c Delete type=0 #168
+2023/08/26-09:37:35.599 1b5c Manual compaction at level-0 from '\x00<\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00=\x00\x00\x00' @ 0 : 0; will stop at '\x00<\x00\x00\x05' @ 1506 : 1
+2023/08/26-09:37:35.600 1b5c Compacting 1@0 + 1@1 files
+2023/08/26-09:37:35.612 1b5c Generated table #173@0: 149 keys, 4012 bytes
+2023/08/26-09:37:35.612 1b5c Compacted 1@0 + 1@1 files => 4012 bytes
+2023/08/26-09:37:35.612 1b5c compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/08/26-09:37:35.612 1b5c Delete type=2 #172
+2023/08/26-09:37:35.613 1b5c Manual compaction at level-0 from '\x00<\x00\x00\x05' @ 1506 : 1 .. '\x00=\x00\x00\x00' @ 0 : 0; will stop at (end)
